@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insightful Time Tracker</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="chart.js"></script>
+    <script src="popup.js" defer></script>
+</head>
+
+<body class="bg-gray-100 p-4 w-200">
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-2xl font-bold text-gray-800">Insightful Tracker</h1>
+                <select id="timeRange"
+                    class="bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2">
+                    <option value="day">Today</option>
+                    <option value="week">This Week</option>
+                    <option value="month">This Month</option>
+                </select>
+            </div>
+            <div id="productivityScore" class="mb-4 text-center text-lg font-semibold"></div>
+            <canvas id="timeChart" class="mb-4"></canvas>
+            <div id="timeList" class="space-y-4 max-h-96 overflow-y-auto pr-2"></div>
+        </div>
+    </div>
+    <div class="mt-4 text-center">
+        <a href="options.html" target="_blank" class="text-blue-600 hover:text-blue-800">Settings</a>
+    </div>
+</body>
+
+</html>

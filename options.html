@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insightful Time Tracker Settings</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="options.js" defer></script>
+</head>
+
+<body class="bg-gray-100 p-8">
+    <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="p-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-6">Settings</h1>
+
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-2">Productive Sites</h2>
+                <input type="text" id="productiveSite" class="w-full p-2 border rounded"
+                    placeholder="Enter a productive site">
+                <button id="addProductiveSite" class="mt-2 bg-green-500 text-white px-4 py-2 rounded">Add</button>
+                <ul id="productiveSiteList" class="mt-2 list-disc pl-5"></ul>
+            </div>
+
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-2">Unproductive Sites</h2>
+                <input type="text" id="unproductiveSite" class="w-full p-2 border rounded"
+                    placeholder="Enter an unproductive site">
+                <button id="addUnproductiveSite" class="mt-2 bg-red-500 text-white px-4 py-2 rounded">Add</button>
+                <ul id="unproductiveSiteList" class="mt-2 list-disc pl-5"></ul>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-semibold mb-2">Time Goals</h2>
+                <input type="text" id="timeGoalSite" class="w-full p-2 border rounded" placeholder="Enter a site">
+                <input type="number" id="timeGoalMinutes" class="mt-2 w-full p-2 border rounded"
+                    placeholder="Enter daily time goal in minutes">
+                <button id="addTimeGoal" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Set Goal</button>
+                <ul id="timeGoalList" class="mt-2 list-disc pl-5"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

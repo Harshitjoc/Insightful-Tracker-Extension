@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Insightful Time Tracker",
+    "version": "2.0",
+    "description": "Track your time with insights, goals, and productivity tools",
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "notifications",
+        "alarms"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "options_page": "options.html",
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+    }
+}
